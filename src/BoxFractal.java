@@ -12,7 +12,7 @@ import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class FractalStarter extends JPanel {
+public class BoxFractal extends JPanel {
     // Settings
     private boolean drawOnScreen = true;
     private boolean writeToImageFile = false;
@@ -25,7 +25,7 @@ public class FractalStarter extends JPanel {
     private final int SIDE = 150;
     private BufferedImage image;
 
-    public FractalStarter(int depth) throws IOException {
+    public BoxFractal(int depth) throws IOException {
         // CREATE A BLANK IMAGE
         image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
         Graphics2D g2 = (Graphics2D) image.getGraphics();
